@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zolani Matolengwe | Communication & Media Practitioner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="#home" class="logo">ZM.</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero">
+        <div class="container">
+            <p class="hero-tag">Communication & Media Practitioner</p>
+            <h1>Zolani Matolengwe</h1>
+            <p class="hero-desc">Research &bull; Events &bull; Digital Media &bull; Communication</p>
+            <a href="#contact" class="btn">Get in touch</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="about-text">Versatile media professional with experience in research, event and stage management, digital marketing, social media, communication, and the arts. Skilled in administration, logistics, and multimedia content creation.</p>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="alt-bg">
+        <div class="container">
+            <h2>Experience</h2>
+
+            <div class="card">
+                <h3>University of the Western Cape <span class="years">2025 – 2026</span></h3>
+                <p class="role">Researcher</p>
+                <ul>
+                    <li>Conducted qualitative and quantitative research</li>
+                    <li>Analysed data and produced reports and presentations</li>
+                    <li>Academic writing and literature reviews</li>
+                    <li>Managed timelines, documentation, and collaboration</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Cape Weed Lover Market <span class="years">2025 – 2026</span></h3>
+                <p class="role">Social Media Manager</p>
+                <ul>
+                    <li>Developed and executed social media strategies</li>
+                    <li>Created engaging digital content</li>
+                    <li>Managed campaigns and analytics</li>
+                    <li>Increased audience engagement and brand visibility</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Bravo Le Roux <span class="years">2018 – 2025</span></h3>
+                <p class="role">Road Manager</p>
+                <ul>
+                    <li>Managed tours, logistics, and artist coordination</li>
+                    <li>Oversaw live event operations and scheduling</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Cape Peninsula University of Technology <span class="years">2023</span></h3>
+                <p class="role">Researcher</p>
+            </div>
+
+            <div class="card">
+                <h3>Iziko Museum</h3>
+                <p class="role">Photographer</p>
+            </div>
+
+            <div class="card">
+                <h3>Teaching Assistant</h3>
+            </div>
+
+            <div class="card">
+                <h3>Stoney Point <span class="years">2019 – 2020</span></h3>
+                <p class="role">Gate Guard</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-tags">
+                <span>Social Media & Digital Marketing</span>
+                <span>Video & Audio Editing</span>
+                <span>Event & Stage Management</span>
+                <span>Administration & Research</span>
+                <span>Communication & Logistics</span>
+            </div>
+            <h2 style="margin-top:2rem;">Languages</h2>
+            <div class="skill-tags">
+                <span>English (Excellent)</span>
+                <span>Xhosa (Excellent)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="alt-bg">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Honours in Media Leadership & Innovation <span class="years">2025</span></h3>
+                <p class="role">Cape Peninsula University of Technology</p>
+            </div>
+            <div class="card">
+                <h3>Diploma in Digital Marketing <span class="years">2024</span></h3>
+                <p class="role">Oxford Home Study</p>
+            </div>
+            <div class="card">
+                <h3>Advanced Diploma in Journalism <span class="years">2024</span></h3>
+                <p class="role">Cape Peninsula University of Technology</p>
+            </div>
+            <div class="card">
+                <h3>Diploma in Journalism <span class="years">2023</span></h3>
+                <p class="role">Cape Peninsula University of Technology</p>
+            </div>
+            <div class="card">
+                <h3>Grade 12 <span class="years">2013</span></h3>
+                <p class="role">Zola Business High School</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-info">📧 <a href="mailto:Matolengwezolani@gmail.com">Matolengwezolani@gmail.com</a></p>
+            <p class="contact-info">📞 072 739 0521</p>
+            <p class="contact-info">📍 110 Dorset Street, Woodstock, Cape Town, 7100</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Zolani Matolengwe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
