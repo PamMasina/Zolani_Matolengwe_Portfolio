@@ -13,7 +13,9 @@
     <nav>
         <div class="container nav-inner">
             <a href="#home" class="logo">ZM.</a>
+            <span class="available-badge">🟢 Available for Work</span>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -42,7 +44,9 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p class="about-text">Versatile media professional with experience in research, event and stage management, digital marketing, social media, communication, and the arts. Skilled in administration, logistics, and multimedia content creation.</p>
+            <p class="about-text">A multi-skilled media practitioner blending journalism, digital marketing, creative direction, and event management. With an Honours in Media Leadership &amp; Innovation and training in digital marketing, I bring both strategic thinking and hands-on execution to any media or communication role.</p>
+            <p class="about-text" style="margin-top:1rem;">My journey includes work in research, photography, stage and event management, artist road management (Bravo Le Roux), and multimedia content creation — giving me a well-rounded understanding of how stories, brands, and culture move people.</p>
+            <p class="about-text" style="margin-top:1rem;">I'm driven by authenticity, creativity, and community impact. My goal is to help brands and organisations tell meaningful stories, build strong identities, and connect with audiences in ways that matter.</p>
         </div>
     </section>
 
@@ -221,6 +225,19 @@
         document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
             document.getElementById('navLinks').classList.remove('active');
         }));
+
+        const themeToggle = document.getElementById('themeToggle');
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light');
+            themeToggle.textContent = '🌙';
+        }
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light');
+            const isLight = document.body.classList.contains('light');
+            themeToggle.textContent = isLight ? '🌙' : '☀️';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
     </script>
 </body>
 </html>
