@@ -102,11 +102,28 @@ nav {
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s, background 0.2s;
+    margin: 0.3rem;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #0f172a;
 }
 
 .btn:hover {
     background: #7dd3fc;
     transform: translateY(-2px);
+}
+
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #0f172a;
 }
 
 /* Sections */
